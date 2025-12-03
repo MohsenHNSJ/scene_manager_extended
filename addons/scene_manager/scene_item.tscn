@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://addons/scene_manager/scene_item.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://dxy3gmftu2tyg" path="res://addons/scene_manager/icons/GuiTabMenuHl.svg" id="3"]
 [ext_resource type="Script" path="res://addons/scene_manager/popup_button.gd" id="3_nwus0"]
-[ext_resource type="Texture2D" uid="uid://b4xi5nvjb3rhr" path="res://addons/scene_manager/icons/PlayOverlay.png" id="4_pt2e1"]
+[ext_resource type="Texture2D" uid="uid://5teyb27h316q" path="res://addons/scene_manager/icons/PlayOverlay.png" id="4_pt2e1"]
 
 [node name="item" type="HBoxContainer"]
 offset_right = 280.0
