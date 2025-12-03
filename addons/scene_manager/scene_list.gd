@@ -1,14 +1,14 @@
 @tool
 extends Node
 
-# Scene itema and sub_section to instance and add in list
+# Scene item and sub_section to instance and add in list
 const _scene_item = preload("res://addons/scene_manager/scene_item.tscn")
 const _sub_section = preload("res://addons/scene_manager/sub_section.tscn")
 # Duplicate + normal scene theme
 const _duplicate_line_edit: StyleBox = preload("res://addons/scene_manager/themes/line_edit_duplicate.tres")
 # Open close icons
-const _eye_open = preload("res://addons/scene_manager/icons/eye_open.png")
-const _eye_close = preload("res://addons/scene_manager/icons/eye_close.png")
+const _eye_open = preload("res://addons/scene_manager/icons/EyeOpen.png")
+const _eye_close = preload("res://addons/scene_manager/icons/EyeClosed.png")
 # variables
 @onready var _container: VBoxContainer = find_child("container")
 @onready var _delete_list_button: Button = find_child("delete_list")
