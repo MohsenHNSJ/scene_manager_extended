@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Scene Manager"
+config/name="Scene Manager Extended"
+config/description="A tool to manage transition between different scenes."
 run/main_scene="res://demo/scene1.tscn"
 config/features=PackedStringArray("4.5")
 config/icon="res://icon.png"
