@@ -10,6 +10,8 @@ A tool to manage transition between different scenes.
 
 **Note**: Current development of the plugin is vastly different from the original repository. I do *NOT* use Python and git hooks are disabled.
 
+**Note**: This project aims to be drop-in replacement to reduce friction for existing users of the original Scene Manager plugin. However, some breaking changes may be introduced in future releases to improve the overall design and usability of the plugin. These changes will be documented in the changelog.
+
 ## Features
 
 **Recently Added**:
@@ -17,6 +19,7 @@ A tool to manage transition between different scenes.
 * [X] Updated project icon
 * [X] Fixed invalid UID warnings
 * [X] Added vscode settings for optimal development environment
+* [X] Fixed bug causing transition effects appear below the next scene's Canvas Layer
 
 
 **All**:
