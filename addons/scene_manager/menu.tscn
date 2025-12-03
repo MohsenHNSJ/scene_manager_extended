@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" path="res://addons/scene_manager/label.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://deudb80t3kdk0" path="res://addons/scene_manager/icons/FileDialog.svg" id="3"]
-[ext_resource type="Texture2D" uid="uid://jsditrvsfs5h" path="res://addons/scene_manager/icons/Reload.svg" id="5_2r30m"]
+[ext_resource type="Texture2D" uid="uid://q5ky2pnvg4ya" path="res://addons/scene_manager/icons/Reload.svg" id="5_2r30m"]
 [ext_resource type="Texture2D" uid="uid://briccm8yhbi21" path="res://addons/scene_manager/icons/Save.svg" id="5_yw87d"]
 [ext_resource type="Script" path="res://addons/scene_manager/manager.gd" id="6"]
 [ext_resource type="Texture2D" uid="uid://db46q6hma7y7o" path="res://addons/scene_manager/icons/FolderActive.svg" id="7_3r2fd"]
