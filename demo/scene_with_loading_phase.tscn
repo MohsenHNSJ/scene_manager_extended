@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.729412, 0.317647, 0.682353, 1)
+color = Color(0.73, 0.31, 0.68, 1)
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 0
@@ -45,7 +45,7 @@ fade_in_pattern = "circle"
 fade_out_smoothness = 0.2
 fade_in_smoothness = 0.2
 fade_in_inverted = true
-color = Color(0.552941, 0.356863, 0.141176, 1)
+color = Color(0.55, 0.36, 0.14, 1)
 timeout = 0.2
 add_to_back = false
 
@@ -68,7 +68,7 @@ fade_in_pattern = "pixel"
 fade_out_smoothness = 0.5
 fade_in_smoothness = 0.5
 fade_in_inverted = true
-color = Color(0.341176, 0.447059, 0.188235, 1)
+color = Color(0.34, 0.45, 0.19, 1)
 timeout = 0.5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/HBoxContainer"]
@@ -115,7 +115,7 @@ text = "NOTHING"
 script = ExtResource("2_chu1e")
 fade_out_speed = 0.5
 fade_in_speed = 0.5
-color = Color(0.564706, 0.376471, 0.584314, 1)
+color = Color(0.56, 0.38, 0.58, 1)
 timeout = 0.5
 
 [node name="exit" type="Button" parent="CenterContainer/VBoxContainer"]
