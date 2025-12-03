@@ -8,6 +8,8 @@ A tool to manage transition between different scenes.
 
 **Note**: Originally developed by [@maktoobgar](https://github.com/maktoobgar/scene_manager). This fork aims to extend the functionality and compatibility of the original Scene Manager plugin for Godot Engine, adding new features and fixes.
 
+**Note**: Current development of the plugin is vastly different from the original repository. I do *NOT* use Python and git hooks are disabled.
+
 ## Features
 
 **Recently Added**:

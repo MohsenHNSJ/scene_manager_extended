@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qe8b06xf4ekm"
-path="res://.godot/imported/eye_open.png-20b517dc49702a45cc3da80f46f6920e.ctex"
+uid="uid://fktj8k4kfdnp"
+path="res://.godot/imported/EyeClosed.png-8d657ae5ec04d196f05829da6c3927e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/scene_manager/icons/eye_open.png"
-dest_files=["res://.godot/imported/eye_open.png-20b517dc49702a45cc3da80f46f6920e.ctex"]
+source_file="res://addons/scene_manager/icons/EyeClosed.png"
+dest_files=["res://.godot/imported/EyeClosed.png-8d657ae5ec04d196f05829da6c3927e8.ctex"]
 
 [params]
 
