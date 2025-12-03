@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://q5ky2pnvg4ya" path="res://addons/scene_manager/icons/Reload.svg" id="5_2r30m"]
 [ext_resource type="Texture2D" uid="uid://d2afn7wyyglk2" path="res://addons/scene_manager/icons/Save.svg" id="5_yw87d"]
 [ext_resource type="Script" path="res://addons/scene_manager/manager.gd" id="6"]
-[ext_resource type="Texture2D" uid="uid://db46q6hma7y7o" path="res://addons/scene_manager/icons/FolderActive.svg" id="7_3r2fd"]
+[ext_resource type="Texture2D" uid="uid://d4lb0jqeqwjcx" path="res://addons/scene_manager/icons/FolderActive.svg" id="7_3r2fd"]
 [ext_resource type="Texture2D" uid="uid://cij8xp58on4ie" path="res://addons/scene_manager/icons/GuiChecked.svg" id="7_d04a5"]
 
 [node name="root_container" type="MarginContainer"]
