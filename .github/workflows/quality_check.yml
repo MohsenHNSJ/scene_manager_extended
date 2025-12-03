@@ -1,0 +1,27 @@
+---
+name: Code Quality Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions: read-all
+
+jobs:
+  gdlint:
+    name: Check code quality with gdlint
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+
+      - name: Set up GDToolkit
+        uses: Scony/godot-gdscript-toolkit@b7a4935fc6483d51837f7080598dad456f4f7645 # v4.5.0
+
+      - name: Run Linter
+        run: gdlint .
