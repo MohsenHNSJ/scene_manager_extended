@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://4ww1s3pdeqel"]
 
-[ext_resource type="Script" path="res://demo/button.gd" id="1"]
+[ext_resource type="Script" uid="uid://32c2rxkbaiqn" path="res://demo/button.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://c5nya6skib7a2" path="res://demo/fonts/Fake Identity.ttf" id="1_oeex7"]
 
 [node name="Control" type="Control"]
