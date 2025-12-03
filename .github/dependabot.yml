@@ -1,0 +1,11 @@
+---
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    labels:
+      - "ci"
+    open-pull-requests-limit: 1000
+    schedule:
+      interval: "daily"
+    target-branch: "dev"
