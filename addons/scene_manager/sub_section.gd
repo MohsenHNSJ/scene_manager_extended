@@ -110,7 +110,7 @@ func _drop_data(at_position: Vector2, data: Variant) -> void:
 	node.set_setting(setting)
 	_root.sub_section_removed.emit(self)
 
-# Button Delete 
+# Button Delete
 func _on_delete_button_up():
 	queue_free()
 	await self.tree_exited
