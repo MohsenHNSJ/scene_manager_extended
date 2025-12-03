@@ -7,6 +7,12 @@
     "**/*.tres",
     ],
     "cSpell.words": [
+        "elif",
+        "gdignore",
+        "gdscript",
+        "gifs",
+        "maktoobgar",
+        "onready",
         "venv"
     ],
     "tws.trimOnSave": true,

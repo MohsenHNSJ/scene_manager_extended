@@ -1,22 +1,21 @@
-# Scene Manager
+# Scene Manager Extended
 
 <p align="center">
 <img src="icon.png"/>
 </p>
 
-A tool to manage transition between different scenes.\
-Scene Manager v1.X.X and v2.X.X is compatible with Godot 3.\
-Scene Manager v3.X.X is compatible with Godot 4.
+A tool to manage transition between different scenes.
 
-**Note**: Scene Manager v2.X.X and v1.X.X has heavily less features.
+**Note**: Originally developed by [@maktoobgar](https://github.com/maktoobgar/scene_manager). This fork aims to extend the functionality and compatibility of the original Scene Manager plugin for Godot Engine, adding new features and fixes.
 
 ## Features
 
 **Recently Added**:
 
-* [X] Pause and Resume functions added
-* [X] Reactive button added which makes the `Scene Manager UI` reactive to changes on `File System` of godot and refreshes the `Scene Manager UI` automatically every time an update happens on files in `res://` location
-* [X] Auto Save button added which saves automatically every time a new change found in `Scene Manager UI` + If Reactive is enabled too, after that mechanism, save gets called automatically so that there would be no need to use the save button at all
+* [X] Updated project icon
+* [X] Fixed invalid UID warnings
+* [X] Added vscode settings for optimal development environment
+
 
 **All**:
 
@@ -41,7 +40,7 @@ Scene Manager v3.X.X is compatible with Godot 4.
 * [X] Ability to limit how much deep scene manager is allowed to record previous scenes which affects in changing scene to `back`(previous scene) functionality
 * [X] Ability to hide scenes in a list (Just Godot4)
 * [X] Ignoring a specific scene in ignores list section is possible (Just Godot4)
-* [X] sublist in lists of scene manager UI is now possible (Just Godot4)
+* [X] Sub-list in lists of scene manager UI is now possible (Just Godot4)
 * [X] `no_effect_change_scene` function added (Just Godot4)
 * [X] Node can be added to `change_scene` and `no_effect_change_scene` functions (Just Godot4)
 * [X] Possibility to specify path scenes.db via Project/Settings (Just Godot4)
@@ -54,6 +53,9 @@ Scene Manager v3.X.X is compatible with Godot 4.
 * [X] Added a feature to navigate to the scene path in filesystem on godot when clicked on scene address in Scene Manager tool
 * [X] Added a feature to open a desired scene from Scene Manager tab
 * [X] Users now can have some time to load their scene in the background with the new changing scene functionality
+* [X] Pause and Resume functions added
+* [X] Reactive button added which makes the `Scene Manager UI` reactive to changes on `File System` of godot and refreshes the `Scene Manager UI` automatically every time an update happens on files in `res://` location
+* [X] Auto Save button added which saves automatically every time a new change found in `Scene Manager UI` + If Reactive is enabled too, after that mechanism, save gets called automatically so that there would be no need to use the save button at all
 
 ## How To Use?
 
@@ -108,9 +110,9 @@ From menu of every scene, you can visible or hide scenes and see just hidden or 
 
 ## SubList (Just Godot4)
 
-As it is visible on previous pictures, it is possible to add sublists in lists and categorize different scenes in different sublists.
+As it is visible on previous pictures, it is possible to add Sub-lists in lists and categorize different scenes in different Sub-lists.
 
-All you have to do is drag scenes by their buttons on the left and drop them on other sublists.
+All you have to do is drag scenes by their buttons on the left and drop them on other Sub-lists.
 
 # Demo
 
@@ -382,7 +384,7 @@ This is the node you use inside your game code and it has these functions:
     * Returns recorded scene by `set_recorded_scene` function.
 23. `add_loaded_scene_to_scene_tree`() -> void:
     * Imports loaded scene into the scene tree but doesn't change the current scene
-    * Maily used when your new loaded scene has a loading phase when added to scene tree
+    * Mainly used when your new loaded scene has a loading phase when added to scene tree
     * So to use this, first has to call `load_scene_interactive` to load your scene and then have to listen on `load_finished` signal and after the signal emits, you call this function and this function adds the loaded scene to the scene tree but exactly behind the current scene so that you still can not see the new scene
 24. `change_scene_to_existing_scene_in_scene_tree`(**fade_out_options**: Options, **fade_in_options**: Options, **general_options**: GeneralOptions) -> void:
     * When you added the loaded scene to the scene tree by `add_loaded_scene_to_scene_tree` function, you call this function after you are sure that the added scene to scene tree is completely ready and functional to change the active scene
