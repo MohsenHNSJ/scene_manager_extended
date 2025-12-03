@@ -1,0 +1,13 @@
+{
+    "cSpell.ignorePaths": [
+    "**/*.uid",
+    "**/*.import",
+    "**/*gdlintrc",
+    "**/*.tscn",
+    "**/*.tres",
+    ],
+    "cSpell.words": [
+        "venv"
+    ],
+    "godotTools.editorPath.godot4": "d:\\Godot\\Godot_v4.5.1-stable_win64_console.exe"
+}
