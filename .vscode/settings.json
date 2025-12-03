@@ -17,6 +17,8 @@
         "maktoobgar",
         "Mohsen",
         "onready",
+        "smoothstep",
+        "tscn",
         "venv"
     ],
     "tws.trimOnSave": true,

@@ -151,10 +151,10 @@ func _refresh() -> bool:
 
 # checks different states of scene and make actual transitions happen
 func _change_scene(scene, add_to_back: bool) -> bool:
-	# when scenes get instanciate, they will loose their `scene_instance.scene_file_path`
-	# varialbe value which is used to reload the current scene again in this addon and that's
+	# when scenes get instantiate, they will loose their `scene_instance.scene_file_path`
+	# variable value which is used to reload the current scene again in this addon and that's
 	# why I'm fixing this up by hand and I'm not using `get_tree().change_scene_to_packed()`
-	# fuction in here
+	# function in here
 	if scene is PackedScene:
 		scene.get_local_scene()
 		var scene_instance = scene.instantiate()
@@ -202,7 +202,7 @@ func _change_scene(scene, add_to_back: bool) -> bool:
 		return true
 	return false
 
-# makes menu clickable or unclickable during transitions
+# makes menu clickable or un-clickable during transitions
 func _set_clickable(clickable: bool) -> void:
 	if clickable:
 		_fade_color_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -254,7 +254,7 @@ func _process(_delta: float):
 #
 # allowed `input` values:
 # input = -1 => unlimited (default)
-# input =  0 => we can not go back to any previos scenes
+# input =  0 => we can not go back to any previous scenes
 # input >  0 => we can go back to `input` or less previous scenes
 func set_back_limit(input: int) -> void:
 	assert(input >= -1, "Scene Manager Error: input must to >= -1")
@@ -334,9 +334,9 @@ func show_first_scene(fade_in_options: Options, general_options: GeneralOptions)
 
 # returns scene instance of passed scene key (blocking)
 #
-# Note: you can activate `use_sub_threads` but just know that In the newest 
-# versions of Godot there seems to be a bug that can cause a threadlock in
-# the resource loader that will result in infinite loading of the scene 
+# Note: you can activate `use_sub_threads` but just know that In the newest
+# versions of Godot there seems to be a bug that can cause a thread-lock in
+# the resource loader that will result in infinite loading of the scene
 # without any error.
 #
 # Related Github Issues About `use_sub_threads`:
@@ -348,9 +348,9 @@ func create_scene_instance(key: String, use_sub_threads = false) -> Node:
 
 # returns PackedScene of passed scene key (blocking)
 #
-# Note: you can activate `use_sub_threads` but just know that In the newest 
-# versions of Godot there seems to be a bug that can cause a threadlock in
-# the resource loader that will result in infinite loading of the scene 
+# Note: you can activate `use_sub_threads` but just know that In the newest
+# versions of Godot there seems to be a bug that can cause a thread-lock in
+# the resource loader that will result in infinite loading of the scene
 # without any error.
 #
 # Related Github Issues About `use_sub_threads`:
@@ -399,7 +399,7 @@ func no_effect_change_scene(scene, hold_timeout: float = 0.0, add_to_back: bool 
 		_set_out_transition()
 
 # imports loaded scene into the scene tree but doesn't change the scene
-# maily used when your new loaded scene has a loading phase when added to scene tree
+# mainly used when your new loaded scene has a loading phase when added to scene tree
 # so to use this, first has to call `load_scene_interactive` to load your scene
 # and then have to listen on `load_finished` signal and after the signal emits,
 # you call this function and this function adds the loaded scene to the scene
@@ -453,9 +453,9 @@ func change_scene_to_existing_scene_in_scene_tree(fade_out_options: Options, fad
 # connect to `load_percent_changed(value: int)` and `load_finished` signals
 # to listen to updates on your scene loading status
 #
-# Note: you can activate `use_sub_threads` but just know that In the newest 
-# versions of Godot there seems to be a bug that can cause a threadlock in
-# the resource loader that will result in infinite loading of the scene 
+# Note: you can activate `use_sub_threads` but just know that In the newest
+# versions of Godot there seems to be a bug that can cause a thread-lock in
+# the resource loader that will result in infinite loading of the scene
 # without any error.
 #
 # Related Github Issues About `use_sub_threads`:
@@ -521,7 +521,7 @@ func pause(fade_out_options: Options, general_options: GeneralOptions) -> void:
 		await _animation_player.animation_finished
 		fade_out_finished.emit()
 
-## resume (fadein) after pause
+## resume (fade-in) after pause
 func resume(fade_in_options: Options, general_options: GeneralOptions) -> void:
 	_set_clickable(general_options.clickable)
 	_set_pattern(fade_in_options, general_options)
