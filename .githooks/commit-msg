@@ -64,7 +64,7 @@ if first == "feat" or first == "fix" or first == "perf" or first == "test":
 
         if message in content:
             print("formatted commit message:\n\n" + message + "\n")
-        
+
         else:
             content = content.replace("UNRELEASED\n----------\n\n", f"UNRELEASED\n----------\n\n* {message}\n")
 
