@@ -18,7 +18,10 @@
         "Mohsen",
         "onready",
         "smoothstep",
+        "stylebox",
+        "sublists",
         "tscn",
+        "unhide",
         "venv"
     ],
     "tws.trimOnSave": true,

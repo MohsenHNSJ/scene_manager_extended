@@ -36,7 +36,7 @@ func _ready() -> void:
 
 		var sub = _sub_section.instantiate()
 		sub._root = _root
-		sub.name = "Uncategorized"
+		sub.name = "Un-categorized"
 		_container.add_child(sub)
 		sub.open()
 		sub.hide_delete_button()
@@ -199,7 +199,7 @@ func set_duplicate_theme(list: Array) -> void:
 			if children[j].get_key() in list:
 				children[j].custom_set_theme(_duplicate_line_edit)
 
-# Returns all names of sublist
+# Returns all names of sub-list
 func get_all_sublists() -> Array:
 	var arr: Array[String] = []
 	for i in range(_container.get_child_count()):

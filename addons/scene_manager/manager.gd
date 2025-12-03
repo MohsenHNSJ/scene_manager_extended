@@ -54,7 +54,7 @@ var _timer: Timer = null;
 signal ignore_child_deleted(node: Node)
 # When rename happens
 signal item_renamed(node: Node)
-# When item hides or unhides
+# When item hides or un-hides
 signal item_visibility_changed(node: Node, visibility: bool)
 # When item adds to a list
 signal item_added_to_list(node: Node, list_name: String)
@@ -180,7 +180,7 @@ func _get_scenes(root_path: String, ignores: Array) -> Dictionary:
 	if root_path[len(root_path) - 1] != "/":
 		root_path = root_path + "/"
 	if !(original_root_path in ignores) && dir:
-		dir.list_dir_begin() # TODOGODOT4 fill missing arguments https://github.com/godotengine/godot/pull/40547
+		dir.list_dir_begin() # TODO: GODOT4 fill missing arguments https://github.com/godotengine/godot/pull/40547
 
 		if dir.file_exists(root_path + ".gdignore"):
 			return files
@@ -202,7 +202,7 @@ func _get_scenes(root_path: String, ignores: Array) -> Dictionary:
 				_merge_dict(files, new_files)
 	else:
 		# If `root_path` was really a file and not a folder, we know the reason and
-		# propably this is comming from `_on_ignore_child_deleted`, so just add it to list
+		# probably this is coming from `_on_ignore_child_deleted`, so just add it to list
 		if !(original_root_path in ignores):
 			if (!FileAccess.file_exists(original_root_path)):
 				print ("Couldn't open ", original_root_path)
@@ -272,7 +272,7 @@ func _add_scene_to_list(list_name: String, scene_name: String, scene_address: St
 #
 # This function is used in `scene_item.gd` script and plus doing what it is supposed
 # to do, removes and again adds the item in `All` section so that it can be placed
-# in currect place in currect section
+# in correct place in correct section
 func add_scene_to_list(list_name: String, scene_name: String, scene_address: String, setting :ItemSetting) -> void:
 	_add_scene_to_list(list_name, scene_name, scene_address, setting)
 
@@ -346,11 +346,11 @@ func _reload_scenes() -> void:
 
 	# Add scenes that are new and are not into `Scenes` script
 	var data_values: Array = []
-	var data_dics = data.values()
+	var data_dictionary = data.values()
 	if data:
-		for i in range(len(data_dics)):
-			if typeof(data_dics[i]) == TYPE_DICTIONARY:
-				data_values.append(data_dics[i]["value"])
+		for i in range(len(data_dictionary)):
+			if typeof(data_dictionary[i]) == TYPE_DICTIONARY:
+				data_values.append(data_dictionary[i]["value"])
 	for key in scenes:
 		if !(scenes[key] in data_values):
 			var setting = ItemSetting.default()
